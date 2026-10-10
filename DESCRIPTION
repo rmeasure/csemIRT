@@ -1,0 +1,36 @@
+Package: csemIRT
+Title: Bootstrap-Validated Conditional Standard Errors of Measurement for Polytomous IRT Models
+Version: 0.2.0
+Authors@R:
+    person("First", "Last", role = c("aut", "cre"),
+           email = "corresponding@email.com")
+Description: Estimates the conditional standard error of measurement (CSEM)
+    and conditional reliability for unidimensional polytomous item response
+    theory models: the graded response model (Samejima, 1969), the
+    generalized partial credit model (Muraki, 1992), the partial credit model
+    (Masters, 1982), and the graded and Rasch rating scale models. All
+    profiles are expressed on a common standardized latent metric so that
+    models that fix the latent variance and models that estimate it are
+    directly comparable. Sampling uncertainty of the CSEM profile is
+    quantified by parametric or nonparametric bootstrap bands and by a
+    delta-method approximation, and a paired bootstrap tests pointwise
+    whether competing models imply different measurement precision.
+    Further functions identify the latent-trait regions that meet a target
+    conditional reliability and visualize all results. Estimation relies on
+    'mirt' (Chalmers, 2012).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.1.0)
+Imports:
+    mirt (>= 1.40),
+    ggplot2 (>= 3.4.0),
+    parallel,
+    stats,
+    utils
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/rmeasure/csemIRT
+BugReports: https://github.com/rmeasure/csemIRT/issues
+RoxygenNote: 7.3.1
